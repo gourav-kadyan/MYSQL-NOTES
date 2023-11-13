@@ -1,0 +1,114 @@
+SQL --- STRUCTURED QUERY LANGUAGE
+
+RDBMS -- RELATIONAL DATABASE MANAGEMENT SYSTEM
+   LIKE -- MySQL , Oracle, Ms sql server, PostrgreSql etc
+
+So what sql do --> 
+	the main work of sql is that like we have database and so to interact with database --> edit data of database
+	we use sql for it --> like CRUD operations -- > create, read, update and delete the database or its table or data
+
+what does it mean by structured --> it mean that the data in database is in structured way ==> like data in table form --> with specific
+				    rows and coloum 
+
+SQL VS MYSQL --> 
+
+	1- SQL is query language and MySQL itself a RDBMS
+	2- SQL is way to access data and MySQL we do CRUD on it using SQL
+	
+
+Install Mysql community server and mysql workbench
+
+NOTE --> firstly its SQL is not a case-sensitive language but still its a good practice that we always make sql keyword always 
+	 capital like --> create instead of this we do --> CREATE --> thats a good practice coz any other developer if see the 
+	 code then he/she can easily identify which is sql keyword and which are not.
+
+SOME SPECIFIC AND STARTER KEYWORDS ARE --> 
+
+SQL Keywords and Their Functions
+
+1. SELECT:
+   - Purpose: Retrieve data from one or more tables.
+   - Example:
+     SELECT column1, column2 FROM table_name WHERE condition;
+
+2. INSERT:
+   - Purpose: Insert new records into a table.
+   - Example:
+     INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+
+3. UPDATE:
+   - Purpose: Modify existing records in a table.
+   - Example:
+     UPDATE table_name SET column1 = value1 WHERE condition;
+
+4. DELETE:
+   - Purpose: Delete records from a table.
+   - Example:
+     DELETE FROM table_name WHERE condition;
+
+5. CREATE:
+   - Purpose: Create a new database, table, index, or other database objects.
+   - Example:
+     CREATE TABLE table_name (
+       column1 datatype,
+       column2 datatype,
+       ...
+     );
+
+6. ALTER:
+   - Purpose: Modify the structure of an existing database object, such as a table.
+   - Example:
+     ALTER TABLE table_name ADD column_name datatype;
+
+7. DROP:
+   - Purpose: Delete a database or a database object, such as a table.
+   - Example:
+     DROP TABLE table_name;
+
+8. WHERE:
+   - Purpose: Filter records based on a specified condition in a SELECT, UPDATE, or DELETE statement.
+   - Example:
+     SELECT * FROM table_name WHERE column1 = value;
+
+9. ORDER BY:
+   - Purpose: Sort the result set of a query in ascending or descending order.
+   - Example:
+     SELECT * FROM table_name ORDER BY column1 DESC;
+
+10. GROUP BY:
+    - Purpose: Group rows with the same values in specified columns into summary rows.
+    - Example:
+      SELECT column1, COUNT(*) FROM table_name GROUP BY column1;
+
+Note: SQL has many other advanced features and keywords for complex database operations.
+
+
+SOME SPECIFIC QUERY --> 
+
+to create database -- > CREATE DATABASE temp;
+
+to use specific database --> USE temp;
+
+to make tabel in specific database --> 	USE temp
+					CREATE TABLE student{
+					id INT PRIMARY KEY,
+					name VARCHAR(255)
+					};
+
+to insert data in specific table --> USE temp
+				     INSERT INTO student VALUES(1, 'Gourav');
+
+to select or get output that of specific query -->  USE temp
+						    SELECT * FROM student; --> in this * means all data from specific table
+
+
+
+
+
+
+
+
+
+ 
+
+	
